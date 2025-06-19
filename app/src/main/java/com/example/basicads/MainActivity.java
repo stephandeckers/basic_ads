@@ -47,7 +47,10 @@ public class MainActivity extends AppCompatActivity {
 // Request an anchored adaptive banner with a width of 360.
 // Create a new ad view.
         AdManagerAdView adView = new AdManagerAdView(this);
-        adView.setAdUnitId("ca-app-pub-5718236948049728/8953790546");
+        //adView.setAdUnitId("ca-app-pub-5718236948049728/8953790546");
+
+        adView.setAdUnitId("ca-app-pub-3940256099942544/9214589741"); // google testadd
+
 // Request an anchored adaptive banner with a width of 360.
         adView.setAdSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this, 360));
 
@@ -72,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             // beof add
 
             // --- werkt niet goed (20250616 SDE)
-            
+
             InterstitialAd.load(
                     this,
                     "ca-app-pub-5718236948049728/3498283882",
